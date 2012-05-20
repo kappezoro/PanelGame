@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true" >
+
+    <com.game.sudoku.view.PuzzleView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.game.sudoku.view.PuzzleView>
+
+<!-- dial button
+
+   <ToggleButton
+        android:id="@+id/one"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignBottom="@+id/two"
+        android:layout_marginRight="27dp"
+        android:layout_toLeftOf="@+id/two"
+        android:text="ToggleButton"
+        android:textOff="1"
+        android:textOn="1" />
+
+    <ToggleButton
+        android:id="@+id/two"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_marginBottom="250dp"
+        android:text="ToggleButton"
+        android:textOff="2"
+        android:textOn="2" />
+
+    <ToggleButton
+        android:id="@+id/three"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignBottom="@+id/two"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/two"
+        android:text="ToggleButton"
+        android:textOff="3"
+        android:textOn="3" />
+
+    <ToggleButton
+        android:id="@+id/four"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignBottom="@+id/five"
+        android:layout_alignLeft="@+id/one"
+        android:layout_alignRight="@+id/one"
+        android:layout_alignTop="@+id/five"
+        android:layout_below="@+id/one"
+        android:text="ToggleButton"
+        android:textOff="4"
+        android:textOn="4" />
+
+    <ToggleButton
+        android:id="@+id/five"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignLeft="@+id/two"
+        android:layout_alignTop="@+id/two"
+        android:layout_marginTop="120dp"
+        android:text="ToggleButton"
+        android:textOff="5"
+        android:textOn="5" />
+
+    <ToggleButton
+        android:id="@+id/six"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignBaseline="@+id/five"
+        android:layout_alignBottom="@+id/five"
+        android:layout_alignLeft="@+id/three"
+        android:text="ToggleButton"
+        android:textOff="6"
+        android:textOn="6" />
+
+    <ToggleButton
+        android:id="@+id/seven"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignBaseline="@+id/eight"
+        android:layout_alignBottom="@+id/eight"
+        android:layout_alignLeft="@+id/four"
+        android:text="ToggleButton"
+        android:textOff="7"
+        android:textOn="7" />
+
+    <ToggleButton
+        android:id="@+id/eight"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignLeft="@+id/five"
+        android:layout_alignRight="@+id/five"
+        android:layout_below="@+id/five"
+        android:layout_marginTop="10dp"
+        android:text="ToggleButton"
+        android:textOff="8"
+        android:textOn="8" />
+
+    <ToggleButton
+        android:id="@+id/nine"
+        android:layout_width="140px"
+        android:layout_height="110px"
+        android:layout_alignBaseline="@+id/eight"
+        android:layout_alignBottom="@+id/eight"
+        android:layout_alignRight="@+id/six"
+        android:text="ToggleButton"
+        android:textOff="9"
+        android:textOn="9" />
+ -->
+
+   <!-- inside pannel button 1 line-->
+
+    <Button
+        android:id="@+id/one_time_one"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="17dp"
+		android:background="#00000000"
+        android:onClick="line11"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line12"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line13"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line14"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line15"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line16"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line17"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line18"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="17dp"
+        android:onClick="line19"
+         />
+
+          <!-- inside pannel button 2 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line21"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line22"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line23"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line24"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line25"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line26"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line27"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line28"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="80dp"
+        android:onClick="line29"
+         />
+
+   <!-- inside pannel button 3 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line31"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line32"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line33"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line34"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line35"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line36"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line37"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line38"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="143dp"
+        android:onClick="line39"
+         />
+
+   <!-- inside pannel button 4 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line41"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line42"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line43"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line44"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line45"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line46"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line47"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line48"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="206dp"
+        android:onClick="line49"
+         />
+
+   <!-- inside pannel button 5 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line51"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line52"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line53"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line54"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line55"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line56"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line57"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line58"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="269dp"
+        android:onClick="line59"
+         />
+
+   <!-- inside pannel button 6 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line61"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line62"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line63"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line64"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line65"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line66"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line67"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line68"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="332dp"
+        android:onClick="line69"
+         />
+
+   <!-- inside pannel button 7 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line71"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line72"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line73"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line74"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line75"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line76"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line77"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line78"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="395dp"
+        android:onClick="line79"
+         />
+
+    <!-- inside pannel button 8 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line81"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line82"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line83"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line84"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line85"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line86"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line87"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line88"
+         />
+
+       <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="458dp"
+        android:onClick="line89"
+         />
+
+   <!-- inside pannel button 9 line-->
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line91"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line92"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="143dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line93"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="206dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line94"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="269dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line95"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="332dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line96"
+         />
+
+    <Button android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="395dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line97"
+         />
+
+    <Button
+        android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="458dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line98"
+         />
+
+     <Button
+		android:background="#00000000"
+        android:id="@+id/button1"
+        android:layout_width="60px"
+        android:layout_height="60px"
+        android:layout_marginLeft="521dp"
+        android:layout_marginTop="521dp"
+        android:onClick="line99"
+        />
+
+      <TextView
+          android:id="@+id/time"
+          android:layout_width="fill_parent"
+          android:layout_height="60px"
+          android:layout_alignParentLeft="true"
+          android:layout_below="@+id/button1"
+          android:text="@string/time"
+          android:textSize="50px" />
+
+</RelativeLayout>

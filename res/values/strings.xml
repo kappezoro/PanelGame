@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Thank you for playing!! It is Your Score.</string>
+    <string name="app_name">Sudoku</string>
+    <string name="main_title">Sudoku</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_label">About</string>
+    <string name="exit_label">Exit</string>
+    <string name="button_text">Button Test</string>
+    <string name="time">Time :</string>
+
+
+</resources>
